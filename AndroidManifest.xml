@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="fr.babeuloula.teleport.v2"
+    package="fr.babeuloula.teleport"
     android:installLocation="auto"
-    android:versionCode="1"
-    android:versionName="2.0" >
+    android:versionCode="5"
+    android:versionName="2.0.1" >
 
     <uses-sdk
         android:minSdkVersion="8"
@@ -14,7 +14,7 @@
         android:required="true" />
 
     <permission
-        android:name="fr.babeuloula.teleport.v2.permission.MAPS_RECEIVE"
+        android:name="fr.babeuloula.teleport.permission.MAPS_RECEIVE"
         android:protectionLevel="signature" />
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -34,7 +34,7 @@
         <uses-library android:name="com.google.android.maps" />
 
         <activity
-            android:name="fr.babeuloula.teleport.v2.Main"
+            android:name="fr.babeuloula.teleport.Main"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustPan" >
@@ -44,7 +44,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="fr.babeuloula.teleport.v2.Infos"
+            android:name="fr.babeuloula.teleport.Infos"
             android:label="@string/title_activity_infos"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustPan" >
@@ -55,7 +55,7 @@
             android:value="MY_API_KEY" />
 
         <activity
-            android:name="fr.babeuloula.teleport.v2.Maps"
+            android:name="fr.babeuloula.teleport.Maps"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustPan" >
