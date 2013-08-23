@@ -1,4 +1,4 @@
-package fr.babeuloula.teleport.v2;
+package fr.babeuloula.teleport;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -28,10 +28,14 @@ public class Main extends Activity {
 	private Button btn_teleport1;
 	private Button btn_teleport2;
 	
+	private ConnectionDetector internet;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		
+		internet = new ConnectionDetector(this);
 		
 		selectVille = (EditText) findViewById(R.id.selectVille);
 		latitude = (EditText) findViewById(R.id.latitude);
@@ -46,12 +50,16 @@ public class Main extends Activity {
 				if(selectVille.getText().toString().equals("")) {
 					Toast.makeText(getBaseContext(), getBaseContext().getString(R.string.erreurVille), Toast.LENGTH_SHORT).show();
 				} else {
-					LinearLayout mainLayout;
-					mainLayout = (LinearLayout)findViewById(R.id.mainLayout);
-					InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
-					imm.hideSoftInputFromWindow(mainLayout.getWindowToken(), 0);
-					
-					alertTeleport("null", "null", selectVille.getText().toString());
+					if(internet.isConnectingToInternet()) {
+						LinearLayout mainLayout;
+						mainLayout = (LinearLayout)findViewById(R.id.mainLayout);
+						InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
+						imm.hideSoftInputFromWindow(mainLayout.getWindowToken(), 0);
+						
+						alertTeleport("null", "null", selectVille.getText().toString());
+					} else {
+						internet.ErreurConnection();
+					}
 				}
 			}
 		});
@@ -75,12 +83,16 @@ public class Main extends Activity {
 					valid = false;
 				}
 				if(valid) {
-					LinearLayout mainLayout;
-					mainLayout = (LinearLayout)findViewById(R.id.mainLayout);
-					InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
-					imm.hideSoftInputFromWindow(mainLayout.getWindowToken(), 0);
-					
-					alertTeleport(latitude.getText().toString(), longitude.getText().toString(), "null");
+					if(internet.isConnectingToInternet()) {
+						LinearLayout mainLayout;
+						mainLayout = (LinearLayout)findViewById(R.id.mainLayout);
+						InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
+						imm.hideSoftInputFromWindow(mainLayout.getWindowToken(), 0);
+						
+						alertTeleport(latitude.getText().toString(), longitude.getText().toString(), "null");
+					} else {
+						internet.ErreurConnection();
+					}
 				} else {
 					Toast.makeText(getBaseContext(), erreur, Toast.LENGTH_SHORT).show();
 				}
