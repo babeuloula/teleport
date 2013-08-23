@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Teleporter</string>
+    <string name="btn_teleport">Start teleportation</string>
+    <string name="textView_Longitude">Longitude</string>
+    <string name="textView_Latitude">Latitude</string>
+    <string name="presentation">Select a city or enter the latitude and longitude of your destination and click the button to start teleportation.</string>
+    <string name="progressTeleport">Teleportation in progress ...</string>
+    <string name="cancelTeleport">Cancel teleportation</string>
+    <string name="canceledTeleport">Teleport canceled</string>
+    <string name="retour">Return</string>
+    <string name="babeuloula">Application developed by BaBeuloula, Design by RedOcéane. You can visit our web site and send an email :</string>
+    <string name="siteBaB">http://www.babeuloula.fr</string>
+    <string name="siteRed">http://www.redoceane.fr</string>
+    <string name="mailBaB">contact@babeuloula.fr</string>
+    <string name="erreurVille">Enter a city</string>
+    <string name="erreurLatitude">Enter a latitude</string>
+    <string name="erreurLongitude">Enter a longitude</string>
+    <string name="select_ville">Enter your destination</string>
+    <string name="btn_ok">OK</string>
+    <string name="btn_annuler">Cancel</string>
+    <string name="youAreHere">You are here</string>
+    <string name="teleport_success">You have been teleported successfully</string>
+    <string name="bienvenue">Welcome to the one and only application of free teleportation</string>
+    <string name="title_activity_infos">Information</string>
+    <string name="selectEmailApp">Select your email Application</string>
+    <string name="subject">Application Teleport</string>
+    <string name="alertTitle">Caution !</string>
+    <string name="alertText">Here are some rules to follow before the teleportation:\n\n1) Stand still\n2) Only one person at a time\n3) Stay at least 1m from any objects</string>
+    <string name="errorInternet">Erreur Internet</string>
+    <string name="msgErrorInternet">The application requires internet to work.\n\nPlease enable Wifi or cellular data.</string>
+
+</resources>
