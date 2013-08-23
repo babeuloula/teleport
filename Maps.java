@@ -1,4 +1,4 @@
-package fr.babeuloula.teleport.v2;
+package fr.babeuloula.teleport;
 
 import java.io.IOException;
 import java.util.List;
