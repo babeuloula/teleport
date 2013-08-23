@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Téléporteur</string>
+    <string name="btn_teleport">Lancer la téléportation</string>
+    <string name="textView_Longitude">Longitude</string>
+    <string name="textView_Latitude">Latitude</string>
+    <string name="presentation">Sélectionnez une ville ou indiquez la latitude et la longitude de votre destination et cliquez sur le bouton pour lancer la téléportation.</string>
+    <string name="progressTeleport">Téléportation en cours ...</string>
+    <string name="cancelTeleport">Annuler la téléportation</string>
+    <string name="canceledTeleport">Téléportation annulée</string>
+    <string name="retour">Retour</string>
+    <string name="babeuloula">Application développée par BaBeuloula, désign par RedOcéane. Vous pouvez visiter nos sites web et envoyer un mail :</string>
+    <string name="siteBaB">http://www.babeuloula.fr</string>
+    <string name="siteRed">http://www.redoceane.fr</string>
+    <string name="mailBaB">contact@babeuloula.fr</string>
+    <string name="erreurVille">Merci de saisir une ville</string>
+    <string name="erreurLatitude">Merci de saisir une latitude</string>
+    <string name="erreurLongitude">Merci de saisir une longitude</string>
+    <string name="select_ville">Entrez votre destination</string>
+    <string name="btn_ok">OK</string>
+    <string name="btn_annuler">Annuler</string>
+    <string name="youAreHere">Vous êtes ici</string>
+    <string name="teleport_success">Vous avez été téléporté avec succès</string>
+    <string name="bienvenue">Bienvenue dans la seule et l\'unique application de téléportation gratuite</string>
+    <string name="title_activity_infos">Infos</string>
+    <string name="selectEmailApp">Sélectionnez votre application email</string>
+    <string name="subject">Application Téléportation</string>
+    <string name="alertTitle">Attention !</string>
+    <string name="alertText">Voici quelques règles à respecter avant la téléportation :\n\n1) Rester immobile\n2) Une seule personne à la fois\n3) Rester à 1m minimum de tout objets</string>
+    <string name="errorInternet">Internet error</string>
+    <string name="msgErrorInternet">L\'application a besoin d\'internet pour fonctionner.\n\nVeuillez activer le Wifi ou les données cellulaires.</string>
+
+</resources>
