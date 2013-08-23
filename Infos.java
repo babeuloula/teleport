@@ -1,4 +1,4 @@
-package fr.babeuloula.teleport.v2;
+package fr.babeuloula.teleport;
 
 import android.net.Uri;
 import android.os.Bundle;
