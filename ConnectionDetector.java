@@ -31,9 +31,9 @@ public class ConnectionDetector {
     
     public void ErreurConnection() {
     	AlertDialog.Builder alert = new AlertDialog.Builder(context);
-        alert.setTitle("Erreur Internet");
+        alert.setTitle(context.getString(R.string.errorInternet));
         alert.setIcon(R.drawable.ic_launcher);
-        alert.setMessage("L'application a besoin d'internet pour fonctionner.\n\nVeuillez activer le Wifi ou les données cellulaires.");
+        alert.setMessage(context.getString(R.string.msgErrorInternet));
 
         alert.setPositiveButton("Fermer", new DialogInterface.OnClickListener() {
         	public void onClick(DialogInterface dialog, int whichButton) {
