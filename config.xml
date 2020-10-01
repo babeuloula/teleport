@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="fr.babeuloula.teleport" version="3.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Teleporter</name>
+    <description>
+        Bienvenue dans la seule et l'unique application de téléportation gratuite.
+
+        Sélectionnez une ville ou indiquez la latitude et la longitude de votre destination et cliquez sur le bouton pour lancer la téléportation.
+
+        Voici quelques règles à respecter avant la téléportation :
+            1) Rester immobile
+            2) Une seule personne à la fois
+            3) Rester à 1m minimum de tout objets
+
+        Application développée par BaBeuloula, désign par RedOcéane. Vous pouvez visitez nos sites web et envoyer un mail :
+            http://www.babeuloula.fr/
+            http://www.redoceane.fr/
+            contact@babeuloula.fr
+    </description>
+    <author email="contact@babeuloula.fr" href="http://www.babeuloula.fr/projets/1/Teleporteur">
+        BaBeuloula
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <preference name="Orientation" value="portrait" />
+
+    <platform name="android">
+        <icon src="res/mdpi.png" density="mdpi" />
+        <icon src="res/hdpi.png" density="hdpi" />
+        <icon src="res/xhdpi.png" density="xhdpi" />
+        <icon src="res/xhdpi.png" density="xxhdpi" />
+        <icon src="res/xhdpi.png" density="xxxhdpi" />
+    </platform>
+
+    <feature name="Globalization">
+        <param name="android-package" value="org.apache.cordova.Globalization" />
+    </feature>
+</widget>

@@ -1,0 +1,75 @@
+* {
+    outline : none;
+}
+
+html, body {
+    height : 100%;
+    margin : 0;
+}
+
+body {
+    font-family : sans-serif;
+    position: relative;
+}
+
+core-toolbar {
+    color            : rgb(255, 255, 255);
+    background-color : rgb(79, 125, 201);
+    text-align       : center;
+}
+
+paper-fab {
+    position : absolute;
+    right    : 20px;
+    bottom   : 20px;
+}
+
+.frame {
+    padding    : 15px;
+    text-align : center;
+    width      : 320px;
+    margin     : 0 auto;
+}
+
+.frame paper-input {
+    text-align : left;
+}
+
+.frame paper-button {
+    margin-top : 15px;;
+}
+
+#error {
+    color: #C00000;
+    display: none;
+    background: #FF8080;
+    padding: 10px;
+    border-radius        : 3px 3px 3px 3px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+
+paper-progress {
+    width: 100%;
+}
+
+#loading .init {
+    float: left;
+}
+
+#loading .final {
+    float: right;
+}
+
+#loading .current {
+    text-align: center;
+}
+
+#map {
+    background: #FFF;
+    position: absolute;
+    top: 0px; left: 0px; right: 0px; bottom: 0px;
+}
+
+#maps, #prev, #navicon {
+    display: none;
+}
